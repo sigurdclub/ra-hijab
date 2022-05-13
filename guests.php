@@ -28,25 +28,25 @@
     }
         </style>
     </head>
-    <body style="background-color: #EBD8C3;">
+    <body style="background-color: black;">
         <!-- container -->
         <div> 
             <!-- navbar -->
             <div class="row" style="padding: 12px;" >
                 <div style="text-align: center;">
-                    <h3 style="font-family:way; font-size: 50px; color: black;">T-ShirtWeekend</h3>
+                    <h3 style="font-family:way; font-size: 50px; color: white;">Ra Hijab</h3>
                 </div>
             </div>
         <!-- content -->
                 <div style="text-align: center;">
-                    <h4>New Arrivals For You</h4>
+                    <h4 style="color: white;">New Items For You</h4>
                 </div>
 
                 <div class="row" >
                 <div class="card" style="width: 100%;background-color: unset; border: unset;" >
                     <div class="card-body" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
                     <a href="./guests/pesanan/pesanan.php" style="color: black;">
-                        <div class="card" style="width: 18rem; background-color: #F7E9D7; margin-top: 5%; border-radius: 30px;">
+                        <div class="card" style="width: 18rem; background-color: white; margin-top: 5%; border-radius: 30px;">
                             <div class="card-body" >
                                 <img src="assets/images/baju.png" class="card-img-top" alt="...">
                                 <div>
@@ -69,7 +69,7 @@
     <div class="container" >
     <div class="row">
         <div class="col-md-4 pr-md-5">
-        <a href="#" class="footer-site-logo d-block mb-4">T-SHIRTWEEKEND</a>
+        <a href="#" class="footer-site-logo d-block mb-4" style="color: black;">Ra Hijab</a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi perferendis ratione perspiciatis accusantium.</p>
         </div>
         <div class="col-md">
@@ -105,14 +105,14 @@
             <li><a href="#"><span class="icon-pinterest"></span></a></li>
             <li><a href="#"><span class="icon-dribbble"></span></a></li>
         </ul>
-        <p class=""><a href="#" class="btn btn-tertiary">Contact Us</a></p>
+        <p class=""><a href="#" class="btn btn-tertiary" style="background-color: black ">Contact Us</a></p>
         </div>
     </div> 
 
     <div class="row ">
         <div class="col-12 text-center">
         <div class="copyright mt-5 pt-5">
-            <p><small>&copy;T-SHIRTWEEKEND 2022-2023.</small></p>
+            <p style="color: black;"><small>&copy;SigurdClub 2022-2023.</small></p>
         </div>
         </div>
     </div> 

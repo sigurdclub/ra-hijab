@@ -1,0 +1,36 @@
+
+/* footer */
+
+/* menu pesan */
+.table-pesanan th,
+.table-pesanan td
+{
+    color: white;
+}
+
+/* menu products */
+
+.table-products th,
+.table-products td
+{
+    color: white;
+}
+
+.form-products input{
+    background-color: white;
+}
+
+/* navbar guests */
+@font-face {
+    font-family: way;
+    src: url(assets/font/);
+
+}
+
+
+
+
+
+
+
+

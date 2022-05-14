@@ -1,7 +1,7 @@
-    <!-- <?php
-        // include_once "../function.php";
+    <?php
+        include_once "../function.php";
 
-    ?> -->
+    ?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -164,33 +164,31 @@
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Tanggal</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Nama Baju</th>
+                            <th scope="col">Nama Pesanan</th>
+                            <th scope="col">Merek Hijab</th>
+                            <th scope="col">Warna</th>
                             <th scope="col">Jumlah (lembar)</th>
-                            <th scope="col">Alamat</th>
                             <th scope="col">Total Harga</th>
                         </tr>
                         </thead>
                         <tbody>
                             <?php 
-                                $data = query("SELECT * FROM orderan ORDER BY id DESC");
+                                $data = mysqli_query($conn,"SELECT * FROM tb_orderan ORDER BY id DESC");
                                 $i=1;
                             ?>
                             <?php foreach ($data as $row) : ?>
                                 <tr>
                                     <td scope="row"><?= $i++;?> </td>
                                     <td><?= $row['tanggal'];?></td>
-                                    <td><?= $row['nama'];?></td>
-                                    <td><?=$row['nama_baju'];?></td>
-                                    <td><?=$row['size'];?></td>
+                                    <td><?= $row['nama_pemesan'];?></td>
+                                    <td><?=$row['merek_hijab'];?></td>
+                                    <td><?=$row['warna'];?></td>
                                     <td><?=$row['jumlah'];?></td>
-                                    <td><?=$row['alamat'];?></td>
-                                    <td><?=$row['total'];?></td>
+                                    <td><?=$row['total_harga'];?></td>
                                     
                                 </tr>
                             <?php endforeach; ?>
-                                
-                            
+
                         </tbody>
                     </table>
                 </div>

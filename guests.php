@@ -1,3 +1,6 @@
+    <?php 
+    include_once'function.php';
+    ?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -42,23 +45,23 @@
                     <h4 style="color: white;">New Items For You</h4>
                 </div>
 
-                <div class="row" >
-                <div class="card" style="width: 100%;background-color: unset; border: unset;" >
-                    <div class="card-body" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                    <a href="./guests/pesanan/pesanan.php" style="color: black;">
-                        <div class="card" style="width: 18rem; background-color: white; margin-top: 5%; border-radius: 30px;">
-                            <div class="card-body" >
-                                <img src="assets/images/baju.png" class="card-img-top" alt="...">
-                                <div>
-                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 22px; text-align: center; margin-bottom:unset;">T-shirt Yellow Jackass</p>
-                                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 22px; text-align: center; margin-bottom: unset;">Rp.250,000</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row" style="justify-content: space-around; margin-top: 2%;">
+                    <?php
+                            $data = mysqli_query($conn,"SELECT * FROM daftarhijab");
+                        ?>
+                        <?php foreach ($data as $row) : ?>
+                            
+                            <div class="card shadow" style="width: 18rem; border-radius: 12px; background-color: beige;" >
+                                <a href="./guests/pesanan/pesanan.php?harga=<?= $row["harga"] ; ?>&hijab=<?=$row["merek_hijab"];?> " style="color: black;">
+                                    <img style="padding: 12px;" src="./img/<?= $row ["gambar"];?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h3 class="card-title" style="font-weight: bold;"><?=$row["merek_hijab"]?></h3>
+                                    <h5 class="card-text">Rp. <?=$row["harga"]?> </h5>
+                                    </div>
 
-                    </a>
-                    </div>
-                </div>
+                                </a>
+                            </div>
+                        <?php endforeach ?>
                 </div>
         </div>
             

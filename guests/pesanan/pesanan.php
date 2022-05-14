@@ -1,7 +1,7 @@
 <?php
     include_once '../../function.php';
     $harga=$_GET["harga"];
-    $buah=$_GET["buah"];
+    $buah=$_GET["hijab"];
     if(isset($_POST["pesan"]) ){
         
         if(pesan($_POST) >0 ){
@@ -70,17 +70,17 @@
                             <input type="text" name="nama_pemesan" class="form-control" id="inputAddress" placeholder="">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Nama Pesanan</label>
-                            <input type="text" name="nama_pesanan" class="form-control" id="inputAddress" placeholder="" value="<?= $_GET["buah"]; ?>">
+                            <label for="inputAddress" class="form-label">Merek Hijab</label>
+                            <input type="text" name="nama_pesanan" class="form-control" id="inputAddress" placeholder="" value="<?= $_GET["hijab"]; ?>">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Jumlah Pesanan (Kg)</label>
-                            <input type="number" name="jumlah_pesanan" class="form-control" id="inputAddress" placeholder="">
+                            <label for="inputAddress" class="form-label">Warna</label>
+                            <input type="text" name="warna" class="form-control" id="inputAddress" placeholder="">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Alamat</label>
-                            <input type="text" name="alamat" class="form-control" id="inputAddress" placeholder="">
-                        </div>                        
+                            <label for="inputAddress" class="form-label">Jumlah</label>
+                            <input type="number" name="jumlah" class="form-control" id="inputAddress" placeholder="">
+                        </div>                       
                         </div>
                         <div class="col-12" style="display: flex;justify-content: end; ">
                             <!-- <a href="../verifikasi/verifikasi.php"> -->

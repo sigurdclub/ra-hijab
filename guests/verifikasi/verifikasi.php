@@ -56,31 +56,31 @@ if(isset($_POST["submit"])){
                 <div>
                     <form class="row g-3" method="POST">
                         <?php
-                            $data=query("SELECT * FROM tb_pesanan");
+                            $data=mysqli_query($conn,"SELECT * FROM tb_orderan");
                             foreach ($data as $row) {
-                                $row["nama"];
-                                $row["nama_buah"];
+                                $row["nama_pemesan"];
+                                $row["merek_hijab"];
+                                $row["warna"];
                                 $row["jumlah"];
-                                $row["alamat"];
                                 $row["total_harga"];
                             }
                         ?>
                         
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="" value="<?=$row["nama"]?>">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="" value="<?=$row["nama_pemesan"]?>">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Nama Pesanan</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="" value="<?=$row["nama_buah"]?>">
+                            <label for="inputAddress" class="form-label">Merek Hijab</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="" value="<?=$row["merek_hijab"]?>">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Warna</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="" value="<?=$row["warna"]?>">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Jumlah Pesanan</label>
                             <input type="number" class="form-control" id="inputAddress" placeholder=""  value="<?=$row["jumlah"]?>">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">Alamat</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="" value="<?=$row["alamat"]?>">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Total Harga</label>

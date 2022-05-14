@@ -120,7 +120,7 @@ if(isset($_POST["tambah"])){
           <img src="../assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block" style="text-decoration: unset;">Sela</a>
+          <a href="#" class="d-block" style="text-decoration: unset;">Umrah</a>
         </div>
       </div>
 
@@ -190,20 +190,24 @@ if(isset($_POST["tambah"])){
             <div class="card-body">
             <form class="row g-3" action="" method="POST" enctype="multipart/form-data">
               <div class="col-12">
-                <label for="inputAddress" class="form-label" style="color: black;">Nama Baju</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Apple..." name="nama_baju"style="background-color: white; color: black;" >
+                <label for="inputAddress" class="form-label" style="color: black;">Merek Hijab</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Apple..." name="merek_hijab"style="background-color: white; color: black;" >
               </div>
               <div class="col-12">
-                <label for="inputAddress2" class="form-label" style="color: black;">Size</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="1...." name="size" style="background-color: white; color: black;">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label" style="color: black;">Harga</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="15000" name="harga" style="background-color: white; color: black;">
+                <label for="inputAddress2" class="form-label" style="color: black;">Warna</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="1...." name="warna" style="background-color: white; color: black;">
               </div>
               <div class="col-12">
                 <label for="inputAddress2" class="form-label" style="color: black;">Stok</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="2" name="stok" style="background-color: white; color: black;">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="15000" name="stok" style="background-color: white; color: black;">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label" style="color: black;">Tipe</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="2" name="tipe" style="background-color: white; color: black;">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label" style="color: black;">Harga</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="2" name="harga" style="background-color: white; color: black;">
               </div>
               <div class="col-12">
                 <label for="inputAddress2" class="form-label" style="color: black;">Gambar</label>

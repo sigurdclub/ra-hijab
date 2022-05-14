@@ -1,8 +1,8 @@
-    <!-- <?php
-        // include_once "../function.php";
-        // $i=1;
-        // $data=query("SELECT * FROM tb_produkbaju");
-    ?> -->
+    <?php
+        include_once "../function.php";
+        $i=1;
+        $data=mysqli_query($conn,"SELECT * FROM daftarhijab");
+    ?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -70,7 +70,7 @@
             <img src="../assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-            <a href="#" class="d-block">Sela</a>
+            <a href="#" class="d-block">Umrah</a>
             </div>
         </div>
 
@@ -145,10 +145,11 @@
                         <thead>
                         <tr>
                             <th scope="col">No</th>
-                            <th scope="col">Nama Baju</th>
-                            <th scope="col">Size</th>
-                            <th scope="col"> Harga</th>
+                            <th scope="col">Merek Hijab</th>
+                            <th scope="col">Warna</th>
                             <th scope="col">Stok</th>
+                            <th scope="col">Tipe</th>
+                            <th scope="col">Harga</th>
                             <th scope="col">Gambar</th>
                             <th scope="col">Aksi</th>
                             
@@ -160,17 +161,18 @@
 
                                 <tr>
                                     <td scope="row"><?=$i++?> </td>
-                                    <td><?=$row["nama_baju"];?></td>
-                                    <td><?=$row["size"];?></td>
-                                    <td><?=$row["harga"];?></td>
+                                    <td><?=$row["merek_hijab"];?></td>
+                                    <td><?=$row["warna"];?></td>
                                     <td><?=$row["stok"];?></td>
+                                    <td><?=$row["tipe"];?></td>
+                                    <td><?=$row["harga"];?></td>
                                     <td><img src="../img/<?= $row ['gambar'];?>" alt="" width="100px"></td>
                                     <td>
                                     <a href="hapus.php?id=<?=$row["id"];?>">
-                                    <button type="button" class="btn btn-danger">Delete</button></a>
-                        <a href="update.php?id=<?=$row["id"];?>">
-                        <button type="button" class="btn btn-warning" style="color: white;">Update</button>
-                        </a>
+                                        <button type="button" class="btn btn-danger">Delete</button></a>
+                                        <a href="update.php?id=<?=$row["id"];?>">
+                                        <button type="button" class="btn btn-warning" style="color: white;">Update</button>
+                                    </a>
                                     </td>
                                     
                                     

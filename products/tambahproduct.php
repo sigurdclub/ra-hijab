@@ -59,7 +59,7 @@ if(isset($_POST["tambah"])){
   </div> -->
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark" style="background-color: #94B49F;">
+  <nav class="main-header navbar navbar-expand navbar-dark" style="background-color: #4C0070;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -107,13 +107,13 @@ if(isset($_POST["tambah"])){
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index.php" class="brand-link" style="text-decoration: unset; background-color: #026c80;">
+    <a href="index.php" class="brand-link" style="text-decoration: unset; background-color: #9A0680;">
       <!-- <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-      <span class="brand-text font-weight-light">T-ShirtWeekend</span>
+      <h4 class="brand-text font-weight-light" style="text-align: center;">Ra Hijab</h4>
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar"  style="background-color: #026c80;">
+    <div class="sidebar"  style="background-color: #9A0680;">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
@@ -169,13 +169,13 @@ if(isset($_POST["tambah"])){
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper" style="background-color: #B4CFB0;">
+  <div class="content-wrapper" style="background-color: #4C0070;">
 
     <div class="content-header">
       <div class="container-fluid">
         <div class="row ">
           <div class="col">
-            <h1 class="" style="text-align: center; margin-bottom: 2%; color: black;">Form Tambah </h1>
+            <h1 class="" style="text-align: center; margin-bottom: 2%; color: white;">Form Tambah </h1>
           </div>
         </div>
       </div>
@@ -186,31 +186,31 @@ if(isset($_POST["tambah"])){
     <section class="content">
         <!-- Container forms tambah -->
         <div class="row" style="justify-content: center;width: 100%;" >
-          <div class="card" style="width: 50%; background-color: #94B49F;">
+          <div class="card" style="width: 50%; background-color: #9A0680;">
             <div class="card-body">
             <form class="row g-3" action="" method="POST" enctype="multipart/form-data">
               <div class="col-12">
-                <label for="inputAddress" class="form-label" style="color: black;">Merek Hijab</label>
+                <label for="inputAddress" class="form-label" style="color: white;">Merek Hijab</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Apple..." name="merek_hijab"style="background-color: white; color: black;" >
               </div>
               <div class="col-12">
-                <label for="inputAddress2" class="form-label" style="color: black;">Warna</label>
+                <label for="inputAddress2" class="form-label" style="color: white;">Warna</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="1...." name="warna" style="background-color: white; color: black;">
               </div>
               <div class="col-12">
-                <label for="inputAddress2" class="form-label" style="color: black;">Stok</label>
+                <label for="inputAddress2" class="form-label" style="color: white;">Stok</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="15000" name="stok" style="background-color: white; color: black;">
               </div>
               <div class="col-12">
-                <label for="inputAddress2" class="form-label" style="color: black;">Tipe</label>
+                <label for="inputAddress2" class="form-label" style="color: white;">Tipe</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="2" name="tipe" style="background-color: white; color: black;">
               </div>
               <div class="col-12">
-                <label for="inputAddress2" class="form-label" style="color: black;">Harga</label>
+                <label for="inputAddress2" class="form-label" style="color: white;">Harga</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="2" name="harga" style="background-color: white; color: black;">
               </div>
               <div class="col-12">
-                <label for="inputAddress2" class="form-label" style="color: black;">Gambar</label>
+                <label for="inputAddress2" class="form-label" style="color: white;">Gambar</label>
                 <input type="file" class="form-control" id="inputAddress2" placeholder="" name="gambar" style="background-color: white; color: black;">
               </div>
               <div class="col-12" style="display: flex; justify-content: right;">
@@ -236,10 +236,10 @@ if(isset($_POST["tambah"])){
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer" style="background-color: #94B49F;">
+  <footer class="main-footer" style="background-color: #4C0070;">
         <div class="float-right d-none d-sm-inline-block">
        
-        <b style="color: black;">@T-SHIRTWEEKEND</b><span style="color: black;"> 20.10.21</span>
+        <b style="color: white;">@SigurdClub</b><span style="color: white;"> 20.10.21</span>
     </footer>
 </div>
 <!-- ./wrapper -->
